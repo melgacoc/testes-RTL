@@ -27,10 +27,10 @@ describe('Testa o componente FavoritePokemons', () => {
     const home = screen.getByRole('link', { name: /Home/i });
     userEvent.click(home);
 
-    const details = screen.getByRole('link', { name: /more details/i});
+    const details = screen.getByRole('link', { name: /more details/i });
     userEvent.click(details);
 
-    const checkFav = screen.getByRole('checkbox', { name: /favoritado/i});
+    const checkFav = screen.getByRole('checkbox', { name: /favoritado/i });
     userEvent.click(checkFav);
 
     userEvent.click(favPokes);
